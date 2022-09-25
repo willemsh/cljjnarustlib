@@ -1,0 +1,16 @@
+[package]
+name = "cljjnarustlib"
+version = "0.1.0"
+authors = ["Guillermo Martín Gómez <willemsh@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+lazy_static = "1.4.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[dependencies.sdl2]
+version = "0.35.2"
+default-features = false
+features = ["image", "ttf"]
